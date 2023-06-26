@@ -46,7 +46,7 @@ class PromptTrainDataset(Dataset):
         random.shuffle(self.de_type)
 
     def _init_clean_ids(self):
-        ref_file = self.args.data_file_dir + "noisy/denoise.txt"
+        ref_file = self.args.data_file_dir + "noisy/denoise_airnet.txt"
         temp_ids = []
         temp_ids+= [id_.strip() for id_ in open(ref_file)]
         clean_ids = []
@@ -311,6 +311,7 @@ class TestSpecificDataset(Dataset):
 
     def _init_clean_ids(self, root):
         name_list = os.listdir(root)
+        print("Total Images : {}".format(name_list))
         self.degraded_ids += [root + id_ for id_ in name_list]
 
         self.num_img = len(self.degraded_ids)
