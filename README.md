@@ -18,7 +18,7 @@ restore images from various types and levels of degradation. In particular, our
 method uses prompts to encode degradation-specific information, which is then
 used to dynamically guide the restoration network. This allows our method to
 generalize to different degradation types and levels, while still achieving state-of-
-the-art results on image denoising, deblurring, and dehazing. Overall, PromptIR
+the-art results on image denoising, deraining, and dehazing. Overall, PromptIR
 offers a generic and efficient plugin module with few lightweight prompts that can
 be used to restore images of various types and levels of degradation with no prior
 information of corruptions.* 
