@@ -84,11 +84,13 @@ Performance results of the PromptIR framework trained under the all-in-one setti
 ## Citation
 If you use our work, please consider citing:
 
-    @misc{2306.13090,
-    Author = {Vaishnav Potlapalli and Syed Waqas Zamir and Salman Khan and Fahad Shahbaz Khan},
-    Title = {PromptIR: Prompting for All-in-One Blind Image Restoration},
-    Year = {2023},
-    Eprint = {arXiv:2306.13090},
+    @misc{potlapalli2023promptir,
+        title={PromptIR: Prompting for All-in-One Blind Image Restoration}, 
+        author={Vaishnav Potlapalli and Syed Waqas Zamir and Salman Khan and Fahad Shahbaz Khan},
+        year={2023},
+        eprint={2306.13090},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
     }
 
 
