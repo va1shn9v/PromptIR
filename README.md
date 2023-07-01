@@ -68,6 +68,7 @@ Example usage:
 ```
 python demo.py --test_path './test/demo/' --output_path './output/demo/'
 ```
+To use tiling option while running ```demo.py``` set ```--tile``` option to ```True```. 
 
 
 
