@@ -385,4 +385,3 @@ class PromptIR(nn.Module):
 
 
         return out_dec_level1
-    
