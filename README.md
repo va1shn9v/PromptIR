@@ -80,6 +80,10 @@ Performance results of the PromptIR framework trained under the all-in-one setti
 
 <img src = "prompt-ir-results.png"> 
 
+<summary><strong>Visual Results<strong></summary>
+
+The visual results of the PromptIR model evaluated under all-in-one setting can be downloaded [here](https://drive.google.com/drive/folders/1Sm-mCL-i4OKZN7lKuCUrlMP1msYx3F6t?usp=sharing)
+
 
 
 ## Citation
