@@ -64,11 +64,15 @@ To obtain visual results from the model ```demo.py``` can be used. After placing
 ```
 python demo.py --test_path {path_to_degraded_images} --output_path {save_images_here}
 ```
-Example usage:
+Example usage to run inference on a directory of images:
 ```
 python demo.py --test_path './test/demo/' --output_path './output/demo/'
 ```
-To use tiling option while running ```demo.py``` set ```--tile``` option to ```True```. 
+Example usage to run inference on an image directly:
+```
+python demo.py --test_path './test/demo/image.png' --output_path './output/demo/'
+```
+To use tiling option while running ```demo.py``` set ```--tile``` option to ```True```. The Tile size and Tile overlap parameters can be adjusted using ```--tile_size``` and ```--tile_overlap``` options respectively.
 
 
 
@@ -80,7 +84,7 @@ Performance results of the PromptIR framework trained under the all-in-one setti
 
 <img src = "prompt-ir-results.png"> 
 
-<summary><strong>Visual Results<strong></summary>
+<summary><strong>Visual Results</strong></summary>
 
 The visual results of the PromptIR model evaluated under all-in-one setting can be downloaded [here](https://drive.google.com/drive/folders/1Sm-mCL-i4OKZN7lKuCUrlMP1msYx3F6t?usp=sharing)
 

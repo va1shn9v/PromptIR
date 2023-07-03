@@ -310,9 +310,22 @@ class TestSpecificDataset(Dataset):
         self.toTensor = ToTensor()
 
     def _init_clean_ids(self, root):
-        name_list = os.listdir(root)
+        extensions = ['jpg', 'JPG', 'png', 'PNG', 'jpeg', 'JPEG', 'bmp', 'BMP']
+        if os.path.isdir(root):
+            name_list = []
+            for image_file in os.listdir(root):
+                if any([image_file.endswith(ext) for ext in extensions]):
+                    name_list.append(image_file)
+            if len(name_list) == 0:
+                raise Exception('The input directory does not contain any image files')
+            self.degraded_ids += [root + id_ for id_ in name_list]
+        else:
+            if any([root.endswith(ext) for ext in extensions]):
+                name_list = [root]
+            else:
+                raise Exception('Please pass an Image file')
+            self.degraded_ids = name_list
         print("Total Images : {}".format(name_list))
-        self.degraded_ids += [root + id_ for id_ in name_list]
 
         self.num_img = len(self.degraded_ids)
 
