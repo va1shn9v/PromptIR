@@ -1,6 +1,6 @@
-## Restormer: Efficient Transformer for High-Resolution Image Restoration
-## Syed Waqas Zamir, Aditya Arora, Salman Khan, Munawar Hayat, Fahad Shahbaz Khan, and Ming-Hsuan Yang
-## https://arxiv.org/abs/2111.09881
+## PromptIR: Prompting for All-in-One Blind Image Restoration
+## Vaishnav Potlapalli, Syed Waqas Zamir, Salman Khan, and Fahad Shahbaz Khan
+## https://arxiv.org/abs/2306.13090
 
 
 import torch
@@ -149,13 +149,8 @@ class resblock(nn.Module):
                                   nn.PReLU(),
                                   nn.Conv2d(dim, dim, kernel_size=3, stride=1, padding=1, bias=False))
 
-        # self.act = act
-        
-        # self.gcnet = ContextBlock2d(n_feat, n_feat)
-
     def forward(self, x):
         res = self.body((x))
-        # res = self.act(self.gcnet(res))
         res += x
         return res
 
