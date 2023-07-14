@@ -227,14 +227,12 @@ class PromptGenBlock(nn.Module):
         B,C,H,W = x.shape
         emb = x.mean(dim=(-2,-1))
         prompt_weights = F.softmax(self.linear_layer(emb),dim=1)
-        prompt_param = self.prompt_param.data.unsqueeze(0).repeat(B,1,1,1,1,1)
-        prompt_param = prompt_param.data.squeeze(1)
-        prompt_param = prompt_weights.unsqueeze(-1).unsqueeze(-1).unsqueeze(-1) * prompt_param
-        prompt_param = torch.sum(prompt_param,dim=1)
-        prompt_param = F.interpolate(prompt_param,(H,W),mode="bilinear")
-        prompt_param = self.conv3x3(prompt_param)
+        prompt = prompt_weights.unsqueeze(-1).unsqueeze(-1).unsqueeze(-1) * self.prompt_param.unsqueeze(0).repeat(B,1,1,1,1,1).squeeze(1)
+        prompt = torch.sum(prompt,dim=1)
+        prompt = F.interpolate(prompt,(H,W),mode="bilinear")
+        prompt = self.conv3x3(prompt)
 
-        return prompt_param
+        return prompt
 
 
 

@@ -66,7 +66,7 @@ class PromptIRModel(pl.LightningModule):
         self.log("train_loss", loss)
         return loss
     
-    def lr_scheduler_step(self,scheduler):
+    def lr_scheduler_step(self,scheduler,metric):
         scheduler.step(self.current_epoch)
         lr = scheduler.get_lr()
     
