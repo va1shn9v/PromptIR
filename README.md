@@ -1,4 +1,4 @@
-# PromptIR: Prompting for All-in-One Blind Image Restoration
+# PromptIR: Prompting for All-in-One Blind Image Restoration (NeurIPS'23)
 
 [Vaishnav Potlapalli](https://www.vaishnavrao.com/), [Syed Waqas Zamir](https://scholar.google.es/citations?user=WNGPkVQAAAAJ&hl=en), [Salman Khan](https://salman-h-khan.github.io/) and [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en)
 
@@ -86,7 +86,7 @@ Performance results of the PromptIR framework trained under the all-in-one setti
 
 <summary><strong>Visual Results</strong></summary>
 
-The visual results of the PromptIR model evaluated under all-in-one setting can be downloaded [here](https://drive.google.com/drive/folders/1Sm-mCL-i4OKZN7lKuCUrlMP1msYx3F6t?usp=sharing)
+The visual results of the PromptIR model evaluated under the all-in-one setting can be downloaded [here](https://drive.google.com/drive/folders/1Sm-mCL-i4OKZN7lKuCUrlMP1msYx3F6t?usp=sharing)
 
 
 
@@ -96,13 +96,13 @@ If you use our work, please consider citing:
     @article{potlapalli2023promptir,
     title={PromptIR: Prompting for All-in-One Blind Image Restoration},
     author={Potlapalli, Vaishnav and Zamir, Syed Waqas and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={arXiv preprint arXiv:2306.13090},
+    journal={Advances in Neural Information Processing Systems (NeurIPS)},
     year={2023}
     }
 
 
 ## Contact
-Should you have any question, please contact vaishnav.potlapalli@mbzuai.ac.ae
+Should you have any questions, please contact vaishnav.potlapalli@mbzuai.ac.ae
 
 
 **Acknowledgment:** This code is based on the [AirNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet) and [Restormer](https://github.com/swz30/Restormer) repositories. 
