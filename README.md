@@ -93,11 +93,11 @@ The visual results of the PromptIR model evaluated under the all-in-one setting 
 ## Citation
 If you use our work, please consider citing:
 
-    @article{potlapalli2023promptir,
-    title={PromptIR: Prompting for All-in-One Blind Image Restoration},
-    author={Potlapalli, Vaishnav and Zamir, Syed Waqas and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={Advances in Neural Information Processing Systems (NeurIPS)},
-    year={2023}
+    @inproceedings{potlapalli2023promptir,
+      title={PromptIR: Prompting for All-in-One Image Restoration},
+      author={Potlapalli, Vaishnav and Zamir, Syed Waqas and Khan, Salman and Khan, Fahad},
+      booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+      year={2023}
     }
 
 
