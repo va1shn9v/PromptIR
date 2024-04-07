@@ -47,7 +47,7 @@ python train.py --de_type derain dehaze
 
 ## Testing
 
-After preparing the testing data in ```test/``` directory, place the mode checkpoint file in the ```ckpt``` directory. The pretrained model can be downloaded [here](https://drive.google.com/file/d/1wkw5QCQyM2msQOpV-PL2uag3QLs8jYFc/view?usp=sharing). To perform the evalaution use
+After preparing the testing data in ```test/``` directory, place the mode checkpoint file in the ```ckpt``` directory. The pretrained model can be downloaded [here](https://drive.google.com/file/d/1j-b5Od70pGF7oaCqKAfUzmf-N-xEAjYl/view?usp=sharingg), alternatively, it can is also available under the releases tab. To perform the evalaution use
 ```
 python test.py --mode {n}
 ```
