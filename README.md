@@ -102,7 +102,7 @@ If you use our work, please consider citing:
 
 
 ## Contact
-Should you have any questions, please contact vaishnav.potlapalli@mbzuai.ac.ae
+Should you have any questions, please contact pvaishnav2718@gmail.com
 
 
 **Acknowledgment:** This code is based on the [AirNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet) and [Restormer](https://github.com/swz30/Restormer) repositories. 
